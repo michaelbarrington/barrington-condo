@@ -1,0 +1,175 @@
+# this file is written in TOML format.
+# see https://github.com/toml-lang/toml for syntax
+
+baseurl = "http://127.0.0.1:1313/"
+languageCode = "en-us"
+title = "The Barrington Condo"
+
+[params]
+  # Global parameters
+	name = "The Barrington Condo in Kings Beach, California"
+	description = "Your description"
+
+	# Navigation
+	[params.navigation]
+		brand = "The Tahoe Barrington Condo"
+
+		[params.navigation.links]
+			about     = "About"
+			amenities = "Amenities"
+			gallery   = "Photos"
+			contact   = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		slogan     = "Retreat. Refresh. Revive."
+		subtitle   = "Enjoy our __five-star__ rated condo, minutes away from the North shore of __Lake Tahoe, California__."
+		buttonText = "Find out more"
+
+
+	# About section
+	[params.about]
+		headline    = "Kingswood Village, Kings Beach, California"
+    description = """
+Located just five miles southeaset of Northstar Ski
+Resort, and centrally located to eleven other ski resorts in the Tahoe area,
+our condo is just under a mile from Lake Tahoe's north shore. Kingswood Village
+offers a large pool and wading pool built in 2001 as well as three tennis
+courts.
+
+Roomy yet homey, our three-level condo is fully stocked with amenities including washer, dryer, dishwasher,
+new ceramic cook top and oven, microwave, coffee maker, gas grill, indoor and outdoor dining options, and much more. 
+
+"""
+	# Ameneities section
+	[params.amenities]
+		headline = "what you can expect"
+
+        [[params.amenities.list]]
+            icon = "fa-bed"
+            title = "Rest"
+            description = "Comfortably sleep up to six guests in the queen, king and two twin beds, or make it eight with the complimentary futons"
+
+        [[params.amenities.list]]
+            icon = "fa-cutlery"
+            title = "Refuel"
+            description = "Take advantage of the full kitchen, local restauraunts, or the conviently located Safeway less than a mile down the road"
+
+        [[params.amenities.list]]
+            icon = "fa-home"
+            title = "Relax"
+            description = "Enjoy the fireplace, cable television, home stereo, retro gaming consoles, and board games for the entire family"
+
+        [[params.amenities.list]]
+            icon = "fa-tree"
+            title = "Rejuvinate"
+            description = "Experience the beautiful nature of Lake Tahoe on the local trails"
+
+        [[params.amenities.list]]
+            icon = "fa-wifi"
+            title = "Reconnect"
+            description = "Share your vacation experience with friends and family in real-time with free wifi"
+
+        [[params.amenities.list]]
+            icon = "fa-child"
+            title = "Revitalize"
+            description = "Get in touch with your adventurous side by paddleboarding, skiing, taking a guided tour, and much more by browsing our provided directory"
+
+
+  [params.gallery]
+        headline = "photo gallery"
+        # This entry is one gallery member
+        [[params.gallery.list]]
+            modalId  = "1"
+            img      = "downstairs_hallway/main.jpg"
+            title    = "Downstairs Hallway"
+            subtitle = "First Level"
+            description = "Entryway and route to lower bedrooms"
+        # end
+        [[params.gallery.list]]
+            modalId     = "2"
+            img         = "downstairs_bedroom/main.jpg"
+            title       = "Downstairs Bedroom"
+            subtitle    = "First Level"
+
+            [[params.gallery.list.moreviews]]
+                img  =  "downstairs_bedroom/closet.jpg"
+            [[params.gallery.list.moreviews]]
+                img  =  "downstairs_bedroom/television.jpg"
+
+        [[params.gallery.list]]
+            modalId  = "3"
+            img      = "master_bedroom/main.jpg"
+            title    = "Master Bedroom"
+            subtitle = "First Level"
+
+            [[params.gallery.list.moreviews]]
+                img  =  "master_bedroom/door.jpg"
+            [[params.gallery.list.moreviews]]
+                img  =  "master_bedroom/television.jpg"
+            [[params.gallery.list.moreviews]]
+                img  =  "master_bedroom/deck.jpg"
+            [[params.gallery.list.moreviews]]
+                img  =  "master_bedroom/laundry.jpg"
+
+        [[params.gallery.list]]
+            modalId  = "4"
+            img      = "kitchen/main.jpg"
+            title    = "Kitchen"
+            subtitle = "Second Level"
+
+        [[params.gallery.list]]
+            modalId  = "5"
+            img      = "living_room/main.jpg"
+            title    = "Kitchen Bar"
+            subtitle = "Second Level"
+
+        [[params.gallery.list]]
+            modalId  = "6"
+            img      = "living_room/couch.jpg"
+            title    = "Living Room"
+            subtitle = "Second Level"
+
+        # end
+        [[params.gallery.list]]
+            modalId  = "7"
+            img      = "study/main.jpg"
+            title    = "Study"
+            subtitle = "Second Level"
+
+        [[params.gallery.list]]
+            modalId  = "8"
+            img      = "upstairs_deck/main.jpg"
+            title    = "View from Upper Deck"
+            subtitle = "Second Level"
+
+        [[params.gallery.list]]
+            modalId  = "9"
+            img      = "loft/main.jpg"
+            title    = "Loft"
+            subtitle = "Third Level"
+        
+
+        
+    # Portfolio modals
+	[params.gallery.modal]
+        client = "Client"
+        date = "Date"
+        category = "Category"
+        buttonText = "Close"
+
+	# Contact section
+	[params.contact]
+		headline = "Ready to Reserve?"
+		description = """
+  - Check availability here
+  - If available, email Gail or call at 916-769-4566
+  - Print the rental contract and please read thoroughly before signing/initialing where indicated.
+  - For your convenience, you may email, fax, or send the contract via US mail.
+  - To secure your reservation, submit your personal check for $300 or process a debit charge via Visa <i class=\"fa fa-lg fa-cc-visa\"></i> or MasterCard <i class=\"fa fa-lg fa-cc-mastercard\"></i>.
+    - <small>Note: All reservations made thirty days or less from arrival are due in full upon booking.</small>
+  - Upon receipt of final payment, information about the lockbox, parking, and other details will be emailed to you.
+"""
+		phone = "(916) 769-4566"
+		email = "gail@thebarringtontahoecondo.com"

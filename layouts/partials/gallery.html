@@ -1,0 +1,29 @@
+<section class="no-padding" id="portfolio">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="section-heading">{{ with .Site.Params.gallery.headline }}{{ . }}{{ end }}</h1>
+                <hr class="primary">
+            </div>
+        </div>
+        <div class="row no-gutter">
+            {{ range .Site.Params.gallery.list}}
+            <div class="col-md-4">
+                <a href="#portfolioModal{{ .modalId }}" class="portfolio-box portfolio-link" data-toggle="modal">
+                    <img src="img/gallery/{{ .img }}" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                {{ .subtitle}}
+                            </div>
+                            <div class="project-name">
+                                {{ .title}}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

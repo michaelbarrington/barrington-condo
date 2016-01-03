@@ -1,0 +1,17 @@
+{{ "<!-- ABOUT -->" | safeHTML }}
+<section class="bg-primary" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="section-heading text-center">{{ with .Site.Params.about.headline }}{{ . }}{{ end }}</h2>
+                <hr class="light text-center">
+              <div class="text-faded">
+                <p>{{ with .Site.Params.about.description }}{{ . | markdownify }}{{ end }}</p>
+              </div>
+              <div class="text-center">
+<!--                <a href="#contact" class="page-scroll btn btn-default btn-xl">{{ with .Site.Params.about.buttonText }}{{ . }}{{ end }}</a> -->
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
