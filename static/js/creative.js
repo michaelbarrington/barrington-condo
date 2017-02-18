@@ -42,10 +42,6 @@
         }
     });
 
-    // setup slick gallery
-    $('.slick-gallery').slick({
-    });
-
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 

@@ -503,3 +503,12 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+.condo-image-gallery {
+  width: 70%;
+}
+
+.mapviewer {
+  padding: 0px 0px;
+  height: 500px;
+}

@@ -1,0 +1,7 @@
+$(document).ready(function() {
+  $('.condo-image-gallery').slick({
+    slidesToShow: 3,
+    fade: true,
+    centerMode: true
+    });
+});

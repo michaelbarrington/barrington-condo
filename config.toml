@@ -1,7 +1,7 @@
 # this file is written in TOML format.
 # see https://github.com/toml-lang/toml for syntax
 
-baseurl = "http://127.0.0.1:1313/"
+baseurl = "/"
 languageCode = "en-us"
 title = "The Barrington Condo"
 
@@ -159,11 +159,16 @@ new ceramic cook top and oven, microwave, coffee maker, gas grill, indoor and ou
         category = "Category"
         buttonText = "Close"
 
+  # Map section
+  [params.map]
+    headline = "where we are"
+
+
 	# Contact section
 	[params.contact]
-		headline = "Ready to Reserve?"
+		headline = "ready to reserve?"
 		description = """
-  - Check availability here
+  - Check availability <a href="https://www.vrbo.com/53944/calendar" target="_blank">here</a>.
   - If available, email Gail or call at 916-769-4566
   - Print the rental contract and please read thoroughly before signing/initialing where indicated.
   - For your convenience, you may email, fax, or send the contract via US mail.
